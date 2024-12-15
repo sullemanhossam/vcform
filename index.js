@@ -46,5 +46,12 @@ END:VCARD`;
   downloadToFile(vcard, 'vcard.vcf', 'text/vcard');
 }
 
-downloadEl.addEventListener('click', makeVCard);
-fileEl.addEventListener('change', previewFile);
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('JavaScript loaded successfully!');
+//    document.querySelector('h1').textContent = 'Hello from JavaScript!';
+    downloadEl.addEventListener('click', makeVCard);
+    fileEl.addEventListener('change', previewFile);
+});
+
